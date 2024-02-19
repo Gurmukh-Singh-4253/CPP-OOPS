@@ -9,9 +9,7 @@ int GCD(int a,int b){
 int main(){
   int a,b;
   cout<<"Enter 2 numbers and get their GCD";
-  a = 1048576;
-  b = 14348907;
-  // cin>>a;
-  // cin>>b;
+  cin>>a;
+  cin>>b;
   cout<<"The GCD is :"<<GCD((a>b)?a:b,(a<b)?a:b)<<endl;
 }

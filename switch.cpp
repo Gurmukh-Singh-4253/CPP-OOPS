@@ -4,8 +4,8 @@ using namespace std;
 int main(){
   int c;
   cout <<"Enter the number and get the day: ";
-  // cin>> c;
-  c =4;
+  cin>> c;
+  // c =4;
   switch (c) {
     case 0:
       cout<<"Monday"<<endl;
