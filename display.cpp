@@ -25,7 +25,9 @@ public:
 void display(Rectangle r){
   for(int i = 0; i<r.height; i++){
     for(int j = 0; j<2*r.width; j++){
-      if(i==0 || i==r.height-1 || j<=1 || j>=2*r.width-2) cout<<"█";
+      if(i==0 || i==r.height-1 || j<=1 || j>=2*r.width-2){
+        cout<<"\x1b[38;5;"<<232 + (i*8)/r.height + (j*8)/r.width<<"m█\033[0m";
+      }
       else cout<<" ";
     }
     cout<<endl;
