@@ -1,30 +1,24 @@
 #include <iostream>
 using namespace std;
 
-class Shape{
+class Animal{
+  int legs = 4;
 public:
-  float area, perimeter;
+  void display(){
+    cout<<"\nlegs="<<legs;
+  }
 };
 
-class Circle: public Shape{
+class Dog: public Animal{
+  bool tail = true;
 public:
-  Circle(int r){
-    int radius;
-    radius = r;
-    area = 3.141592653589793 * radius * radius;
-    perimeter = 2 * 3.141592653589793 * radius;
-  }
-  Circle(float r){
-    float radius;
-    radius = r;
-    area = 3.141592653589793 * radius * radius;
-    perimeter = 2 * 3.141592653589793 * radius;
+  void display2(){
+    cout<<"\ntail="<<tail;
   }
 };
 
 int main(){
-  Circle C1(8);
-  cout<< C1.area<<endl<< C1.perimeter<<endl;
-  Circle C2(float(8.9));
-  cout<< C2.area<<endl<< C2.perimeter<<endl;
+  Dog d1;
+  d1.display();
+  d1.display2();
 }
