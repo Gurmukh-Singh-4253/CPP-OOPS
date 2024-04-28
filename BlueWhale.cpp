@@ -9,19 +9,21 @@ using namespace std;
 class Mammals{
   public: 
   void display1(){
-    cout<< "I am a Mammal";
+    cout<< "I am a Mammal"<<endl;
   }
 };
+
 class Marineanimals{
   public: 
   void display2(){
-    cout<< "I am a Marine Animal";
+    cout<< "I am a Marine Animal"<<endl;
   }
 };
+
 class BlueWhale: public Mammals, public Marineanimals{
   public: 
   void display3(){
-    cout<< "I belong to both mammals and marine animals";
+    cout<< "I belong to both mammals and marine animals"<<endl;
   }
 };
 
