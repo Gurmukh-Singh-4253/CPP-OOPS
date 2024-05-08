@@ -7,7 +7,7 @@ int main(){
   cin >> x;
   for(int i = 2; i<=sqrt(x); i++){
     if (x%i==0){
-      cout<< "Not prime"<< endl;
+      cout<< "Definitely not prime"<< endl;
       return 0;
     }
   }
