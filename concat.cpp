@@ -5,35 +5,35 @@
 class String1;
 class Statement{
 public:
-  virtual string concat()=0;
+  virtual string concat(string)=0;
 };
 
-class String2{
+class String2: public Statement{
 public:
   string s;
   String2(string s){
     this->s = s;
   }
-  string concat(String1);
+  string concat(string);
 };
 
-class String1{
+class String1: public Statement{
 public:
   string s;
   String1(string s){
     this->s = s;
   }
-  string concat(String2 x){
-    return s+x.s;
+  string concat(string x){
+    return s+x;
   }
 };
 
-string String2::concat(String1 x){
-  return s+x.s;
+string String2::concat(string x){
+  return s+x;
 }
 
 int main(){
   String1 s1("Hello ");
   String2 s2("World");
-  cout<<s1.concat(s2)<<endl;
+  cout<<s1.concat(s2.s)<<endl;
 }
