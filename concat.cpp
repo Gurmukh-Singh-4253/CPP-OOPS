@@ -2,7 +2,6 @@
 //
 #include <bits/stdc++.h>
 
-class String1;
 class Statement{
 public:
   virtual string concat(string)=0;

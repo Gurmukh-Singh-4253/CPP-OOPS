@@ -1,7 +1,6 @@
 // Write a cpp program to calculate the area of reactangle and triangle using the concept of abstract class
 
 #include <iostream>
-using namespace std;
 
 class Shape{
 public: 
