@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-float area(float r){
-  return 3.14159*r*r;
+float volume(float r){
+  return 4.0/3.0*3.14159*r*r*r;
 }
 
-float area(int a, int b, int c){
+float volume(int a, int b, int c){
   return a*b*c;
 }
 
@@ -15,6 +15,6 @@ int main(){
   cin>>radii;
   cout<<"enter the length, bredth and height of the cuboid:";
   cin>>l>>b>>h;
-  cout<<area(radii);
-  cout<<area(l,b,h);
+  cout<<volume(radii);
+  cout<<volume(l,b,h);
 }
