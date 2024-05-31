@@ -39,8 +39,10 @@ public:
 int main(){
   cout<<"Creating Inherited object"<<endl;
   Inherited a;
+  cout<<endl;
   cout<<"Creating Inherited2 object"<<endl;
   Inherited2 b;
+  cout<<endl;
   cout<<"Creating Inherited3 object"<<endl;
   Inherited3 c;
 }
