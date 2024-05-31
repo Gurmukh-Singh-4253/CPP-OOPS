@@ -126,11 +126,11 @@ int main(){
   Bajaj b;
   TVS t;
   Agera.getintel();
-  Agera.giveintel();
   Huayra.getintel();
-  Huayra.giveintel();
   b.getintel();
-  b.giveintel();
   t.getintel();
+  Agera.giveintel();
+  Huayra.giveintel();
+  b.giveintel();
   t.giveintel();
 }
